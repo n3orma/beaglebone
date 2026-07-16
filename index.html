@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BeagleBone Built-in LED</title>
+    <style>
+        body{
+            font-family:Arial;
+            text-align:center;
+            margin-top:100px;
+            background:#f2f2f2;
+        }
+
+        button{
+            width:180px;
+            height:60px;
+            font-size:22px;
+            margin:15px;
+        }
+
+        .status{
+            font-size:30px;
+            margin:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>BeagleBone Black</h1>
+
+<h2>Built-in LED Control</h2>
+
+<div class="status">
+Status:
+{% if state == "1" %}
+🟢 ON
+{% else %}
+🔴 OFF
+{% endif %}
+</div>
+
+<form action="/on">
+<button>LED ON</button>
+</form>
+
+<form action="/off">
+<button>LED OFF</button>
+</form>
+
+</body>
+</html>
