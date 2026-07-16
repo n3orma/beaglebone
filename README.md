@@ -47,23 +47,23 @@ Copy and paste the HTML code into `index.html`, then save the file.
 
 ---
 
-## Step 6: Run the Flask application
-
-```bash
-python3 app.py
-```
-
-The server will start on port **5000**.
-
----
-
-## Step 7: Find the BeagleBone Black IP address
+## Step 6: Find the BeagleBone Black IP address
 
 ```bash
 hostname -I
 ```
 
 Note the IP address displayed.
+
+---
+
+## Step 7: Run the Flask application
+
+```bash
+python3 app.py
+```
+
+The server will start on port **5000**.
 
 ---
 
